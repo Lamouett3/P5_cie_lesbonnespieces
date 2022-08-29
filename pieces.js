@@ -21,10 +21,10 @@ const categorieElement = document.createElement("p");
 categorieElement.innerText = ampoule.categorie ?? "(aucune catégorie)";
 
 const descriptionElement = document.createElement("p");
-descriptionElement.innerText = "Pas de description pour le moment.";
+descriptionElement.innerText = ampoule.description ?? "Pas de description pour le moment.";
 
 const disponnibleElement = document.createElement("p");
-disponnibleElement.innerText = ("En stock" || "Rupture de stock");
+disponibiliteElement.innerText = ampoule.disponibilite ? "En stock" : "Rupture de stock";
 
 // Récupération de l'élément du DOM qui accueillera les fiches
 const sectionFiches = document.querySelector(".fiches");
@@ -35,5 +35,5 @@ sectionFiches.appendChild(nomElement);
 sectionFiches.appendChild(prixElement);
 sectionFiches.appendChild(categorieElement);
 sectionFiches.appendChild(descriptionElement);
-sectionFiches.appendChild(disponnibleElement);
+sectionFiches.appendChild(disponibiliteElement);
 
