@@ -18,11 +18,10 @@
     categorieElement.innerText = ampoule.categorie;
 
     // Récupérartion de l'élément du DOM qui acceuillera les fiches //
-    const sectionFichies = document.querySelector(".fiches");
+    const sectionFiches = document.querySelector(".fiches");
 
     // Ajout des éléments créés dans le DOM //
-    sectionFichies.appendChild(imageElement);
-    sectionFichies.appendChild(nomElement);
-    sectionFichies.appendChild(prixElement);
-    sectionFichies.appendChild(categorieElement);
-    
+    sectionFiches.appendChild(imageElement);
+    sectionFiches.appendChild(nomElement);
+    sectionFiches.appendChild(prixElement);
+    sectionFiches.appendChild(categorieElement);
